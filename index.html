@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./index.css" />
+		<link href="https://fonts.cdnfonts.com/css/br-cobane" rel="stylesheet" />
+		<link href="https://fonts.cdnfonts.com/css/jomolhari-2" rel="stylesheet" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<!--Nav Bar-->
+		<div class="backgroundChange">
+			<section id="navbar" class="p-3">
+				<header data-bs-theme="dark">
+					<nav
+						class="navbar navbar-expand-md navbar-dark bg-dark m-3 individual-navbar"
+					>
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#">FoodAtTheDoor</a>
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarCollapse"
+								aria-controls="navbarCollapse"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarCollapse">
+								<ul class="navbar-nav me-auto mb-2 mb-md-0 pr-3">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#"
+											>Home</a
+										>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Products</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" aria-disabled="true">Features</a>
+									</li>
+								</ul>
+								<form class="d-flex" role="Login">
+									<input
+										class="form-control me-2"
+										type="email"
+										placeholder="Email"
+										aria-label="Search"
+									/>
+									<input
+										class="form-control me-2"
+										type="password"
+										placeholder="Password"
+										aria-label="Search"
+									/>
+									<button class="btn btn-success" type="Login">Login</button>
+								</form>
+							</div>
+						</div>
+					</nav>
+				</header>
+			</section>
+		</div>
+		<!--Sign Up-->
+		<section class="Sign Up">
+			<div class="container-flex">
+				<div class="row">
+					<div class="card parent">
+						<div class="rowFluid">
+							<img
+								class="card-img-bottom"
+								id="fruit"
+								src="assets/images/Fruits.png"
+							/>
+						</div>
+						<div
+							class="card-img-overlay signUpDiv offset-lg-1 mt-lg-5 mt-0 offset-0"
+						>
+							<h1 class="mainFont">Food at the door</h1>
+							<h2 class="mt-2 col-sm-6 col-xl-8 col-6 complimentaryFont">
+								Have fresh hot food delivered in 20 minutes or less.
+							</h2>
+							<label for="newsletter1" class="visually-hidden"
+								>Email address</label
+							>
+							<input
+								id="newsletter1 my-3 "
+								type="text"
+								class="form-control inputWidth"
+								placeholder="Email address"
+							/>
+							<button class="btn btn-success my-3" type="button">
+								Subscribe
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Carousel-->
+		<section class="Carousel secondaryBackground">
+			<div class="container py-3">
+				<div
+					id="myCarousel"
+					class="carousel slide pointer-event"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#myCarousel"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#myCarousel"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#myCarousel"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
+					<h2 class="mainFont middleText">Promotions of the week!</h2>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./assets/images/A&W.png" class="carouselImage" />
+							<div class="container">
+								<div class="carousel-caption text-start">
+									<h2 class="mainFont">A&W Promotion.</h2>
+									<p class="complimentaryFont">
+										Have a Root Beer with each meal in September!
+									</p>
+									<p>
+										<a class="btn btn-lg btn-danger" href="#">Order now!</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/images/Texas.jpg" class="carouselImage" />
+
+							<div class="container">
+								<div class="carousel-caption text-start">
+									<h2 class="mainFont">Celebrate Christmas at Texas Chicken</h2>
+									<p class="complimentaryFont">
+										Get one free chicken for each chicken meal purchase!
+									</p>
+									<p>
+										<a class="btn btn-lg btn-danger" href="#">1-for-1 now!</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./assets/images/KFC.jpg" class="carouselImage" />
+							<div class="container">
+								<div class="carousel-caption text-start">
+									<h2 class="mainFont">KFC!</h2>
+									<p class="complimentaryFont">
+										Try the new surf and turf burger! Shrimp and salmon burger!
+									</p>
+									<p><a class="btn btn-lg btn-danger" href="#">Try now!</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#myCarousel"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#myCarousel"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!--Features-->
+		<section class="Features triadBackground">
+			<div class="container px-4 py-5" id="featured-3">
+				<h2 class="pb-2 border-bottom">
+					Sit home and relax! Enjoy the delicious meal!
+				</h2>
+				<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+					<div class="feature col">
+						<img src="./assets/images/24Hours.png" class="featuresImage py-3" />
+						<h2>We are here for you.</h2>
+						<p>
+							Delivery services for 18 hours per day, ready to serve you from
+							4am-12am!
+						</p>
+					</div>
+					<div class="feature col">
+						<img
+							src="./assets/images/Delivery.jpg"
+							class="featuresImage py-3"
+						/>
+						<h2>Fast deliveries</h2>
+						<p>
+							Deliveries guaranteed 15 minutes or less when food is ready! Just
+							be ready at the door!
+						</p>
+					</div>
+					<div class="feature col">
+						<img
+							src="./assets/images/Cashless.jpg"
+							class="featuresImage py-3"
+						/>
+						<h2>Cashless</h2>
+						<p>
+							Worry not with paying up in cash! Pay with your debit or credit
+							card for a smooth experience!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Pricing-->
+		<section class="Pricing">
+			<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+				<h1 class="display-4 fw-normal">Join our Membership now!</h1>
+				<p class="fs-5 text-muted">
+					Get freebies when joining our membership! From free deliveries and
+					priority delivieries.
+				</p>
+			</div>
+			<div class="container">
+				<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+					<div class="col">
+						<div class="card mb-4 rounded-3 shadow-sm">
+							<div class="card-header py-3">
+								<h4 class="my-0 fw-normal">Customer</h4>
+							</div>
+							<div class="card-body">
+								<h1 class="card-title pricing-card-title">
+									$0<small class="text-muted fw-light">/mo</small>
+								</h1>
+								<ul class="list-unstyled mt-3 mb-4">
+									<li>5 free deliveries per week</li>
+									<li>Newsletter on promotions.</li>
+									<li>Help center access</li>
+								</ul>
+								<button
+									type="button"
+									class="w-100 btn btn-lg btn-outline-success"
+								>
+									Sign up for free
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card mb-4 rounded-3 shadow-sm">
+							<div class="card-header py-3">
+								<h4 class="my-0 fw-normal">Premier Gourmet</h4>
+							</div>
+							<div class="card-body">
+								<h1 class="card-title pricing-card-title">
+									$15<small class="text-muted fw-light">/mo</small>
+								</h1>
+								<ul class="list-unstyled mt-3 mb-4">
+									<li>Unlimited free deliveries.</li>
+									<li>Newsletter on promotions.</li>
+									<li>Priority food deliveries.</li>
+									<li>Help center access.</li>
+								</ul>
+								<button type="button" class="w-100 btn btn-lg btn-success">
+									Sign Up
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card mb-4 rounded-3 shadow-sm border-success">
+							<div
+								class="card-header py-3 text-white bg-success border-success"
+							>
+								<h4 class="my-0 fw-normal">VIP</h4>
+							</div>
+							<div class="card-body">
+								<h1 class="card-title pricing-card-title">
+									$29<small class="text-muted fw-light">/mo</small>
+								</h1>
+								<ul class="list-unstyled mt-3 mb-4">
+									<li>Daily deals!</li>
+									<li>Unlimited free deliveries.</li>
+									<li>Newsletter on promotions.</li>
+									<li>Priority food deliveries.</li>
+									<li>Help center access.</li>
+								</ul>
+								<button type="button" class="w-100 btn btn-lg btn-success">
+									Sign Up
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--FAQ-->
+		<section class="Footer">
+			<div class="container">
+				<h3 class="text-center mb-4 pb-2 text-success fw-bold">FAQ</h3>
+				<p class="text-center mb-5">
+					Find the answers for the most frequently asked questions below
+				</p>
+
+				<div class="row">
+					<div class="col-md-6 col-lg-4 my-8">
+						<h6 class="mb-3 text-success">
+							<i class="far fa-paper-plane text-success"></i> How do I order?
+						</h6>
+						<p>To order your food:</p>
+						<ol>
+							<li>We require you to login for security purposes.</li>
+							<li>Click on the restaurant you would like to order from.</li>
+							<li>Select a dish or food from the restaurant.</li>
+							<li>
+								Finally check out~ And wait for a few minutes for your food to
+								arrive!
+							</li>
+						</ol>
+					</div>
+
+					<div class="col-md-6 col-lg-4 mb-4">
+						<h6 class="mb-3 text-success">
+							<i class="fas fa-pen-alt text-success"></i> Can I cancel my order
+							if I have made one?
+						</h6>
+						<p>
+							<strong><u>Yes, it is possible!</u></strong> You may only cancel
+							if your dish is in preparation and not during delivery.
+						</p>
+					</div>
+
+					<div class="col-md-6 col-lg-4 mb-4">
+						<h6 class="mb-3 text-success">
+							<i class="fas fa-user text-success"></i> How long does my
+							membership last?
+						</h6>
+						<p>
+							A membership payment lasts an entire full month(30 days) from your
+							last payment.
+						</p>
+					</div>
+
+					<div class="col-md-6 col-lg-4 mb-4">
+						<h6 class="mb-3 text-success">
+							<i class="fas fa-rocket text-success"></i> If I would like to
+							cancel my subscription how can I do it?
+						</h6>
+						<p>
+							There is no refund for the subscription but future subscription
+							payments will stop. Cancel my subscription
+							<a href="#" class="p-0 text-success"> Here</a>.
+						</p>
+					</div>
+
+					<div class="col-md-6 col-lg-4 mb-4">
+						<h6 class="mb-3 text-success">
+							<i class="fas fa-home text-success"></i>Are there any discounts
+							available at foodpanda right now?
+						</h6>
+						<p>
+							<strong><u>Yes we do!</u>.</strong> Discount codes will update on
+							the app everytime you login to your account. Use your discount
+							code when checking out!
+						</p>
+					</div>
+
+					<div class="col-md-6 col-lg-4 mb-4">
+						<h6 class="mb-3 text-success">
+							<i class="fas fa-book-open text-success"></i>Any other questions?
+						</h6>
+						<span> Join our</span>
+						<a href="#" class="p-0 text-success"> FAQ </a>
+						<span> or contact our </span
+						><a href="#" class="p-0 text-success">Customer Services.</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Footer-->
+		<section class="Footer my-5"></section>
+		<div class="container">
+			<footer class="pt-5">
+				<div class="row">
+					<div class="col-lg-2 col-sm-6">
+						<h5>About us</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-muted">Home</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-muted">Our Mission</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-muted">Pricing</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-2 col-sm-6">
+						<h5>Contact us</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-muted"
+									>Customer Services</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-muted">Ask about us</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-muted">FAQs</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-2 col-sm-12">
+						<h5>Join us</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-muted">Careers</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-muted"
+									>Advertise with us</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0 text-muted">Partner with us</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-4 offset-lg-1 offset-sm-0 col-sm-6 mt-lg-0 mt-5">
+						<form>
+							<h5>Subscribe to our newsletter</h5>
+							<p>Get notified when promotions or rewards are up for grabs.</p>
+							<div class="d-flex w-100 gap-2">
+								<label for="newsletter1" class="visually-hidden"
+									>Email address</label
+								>
+								<input
+									id="newsletter1"
+									type="text"
+									class="form-control"
+									placeholder="Email address"
+								/>
+								<button class="btn btn-success" type="button">Subscribe</button>
+							</div>
+							<h5 class="pt-3">Contact us</h5>
+							<p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									class="bi bi-telephone-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+									/>
+								</svg>
+								: <br />+60 173066026
+							</p>
+							<p>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									class="bi bi-envelope-at-fill"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
+									/>
+									<path
+										d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"
+									/>
+								</svg>
+								:<br />brianwongweiwen94@gmail.com
+							</p>
+						</form>
+					</div>
+				</div>
+
+				<div class="d-flex justify-content-between py-4 my-4 border-top">
+					<p>
+						© 2023 Brian Wong FoodAtTheDoor Company, Inc. All rights reserved.
+					</p>
+					<ul class="list-unstyled d-flex">
+						<li class="ms-3">
+							<a class="link-dark" href="#">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									class="bi bi-twitter-x"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"
+									/>
+								</svg>
+							</a>
+						</li>
+						<li class="ms-3">
+							<a class="link-dark" href="#"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									class="bi bi-instagram"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+									/></svg
+							></a>
+						</li>
+						<li class="ms-3">
+							<a class="link-dark" href="#"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="currentColor"
+									class="bi bi-facebook"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+									/></svg
+							></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

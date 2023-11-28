@@ -1,0 +1,81 @@
+.individual-navbar{
+    border-radius: 30px;
+}
+
+.backgroundChange{
+    background: linear-gradient(-45deg, #00E078, #14B8E0, #00E02C, #006DE0);
+	background-size: 400% 20%;
+	animation: gradient 15s ease infinite;
+	background-repeat: no;
+	height: 20%;
+}
+
+.carouselImage{
+	width: 100%;
+}
+.parent{
+	position: relative;
+	width: 100%;
+	min-height: 400px;
+}
+
+.topLeft{
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+
+.rowFluid{
+	display: flex;
+	align-items: flex-end;
+	justify-content: end;
+	height: 100%;
+}
+
+#fruit{
+	width: 80%;
+}
+
+.middleText{
+	text-align: center;
+}
+.featuresImage{
+	width: 100%;
+	aspect-ratio: 1/1;
+	border-radius: 30px;
+}
+.mainFont{
+	font-family: 'Jomolhari', sans-serif;
+	font-weight: bold;
+}
+.signUpDiv{
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+.inputWidth{
+	max-width: 50%;
+}
+
+.complimentaryFont{
+	font-family: 'BR Cobane', sans-serif;
+}
+
+.secondaryBackground{
+	background-color: #EDF7EE;
+}
+.triadBackground {
+	background-color: #C8E8CC;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
